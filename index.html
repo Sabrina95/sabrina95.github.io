@@ -1,0 +1,117 @@
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <style>
+        .checkbox-blue-grey[type="checkbox"].filled-in:checked+span:not(.lever):after {
+  border: 2px solid #607d8b;
+  background-color: #607d8b;
+}
+    </style>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="container">
+
+        <h2>
+            Umfrage zum Einsatz von Process Mining, Self-Service BI und RPA im Controlling
+        </h2>
+
+        <p>
+            Sehr geehrte Damen und Herren,
+        </p>
+        <p>
+            mein Name ist Sabrina Möhres und ich studiere an der Hochschule Fulda im Studiengang Accounting, Finance und
+            Controlling.
+            Im Rahmen meiner Masterthesis beschäftige ich mich mit dem Einsatz von Process Mining, Self-Service BI und
+            Robotic Process Automation im Controlling.
+        </p>
+        <p>
+            Ich danke Ihnen für Ihre teilnahme.
+        </p>
+        <p>
+            Sabrina Möhres
+        </p>
+
+        
+        <p>
+            <strong>Warum erhebe ich die Daten?</strong>
+        </p>
+        <p>
+            text
+        </p>
+
+        <p>
+            <strong>Wie können Sie mich kontaktieren?</strong>
+        </p>
+        <p>
+            <a class="waves-effect waves-light modal-trigger"
+                href="mailto:sabrina.moehres@w.hs-fulda.de">sabrina.moehres@w.hs-fulda.de</a>
+        </p>
+
+
+        <p>
+            <label>
+                <input type="checkbox" id="agree" class="filled-in checkbox-blue-grey" checked="checked" />
+                <span>Ich stimme der <a class="waves-effect waves-light modal-trigger"
+                        href="#modal1">Datenschutzerklärung</a> zu.</span>
+            </label>
+        </p>
+
+        <!-- Inhalt Datenschutzerklärung -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>Datenschutzerklärung</h4>
+                <p>A bunch of text</p>
+                <h6>1. Zweck der Umfrage</h6>
+                <p>A bunch of text 2</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
+            </div>
+        </div>
+
+        <!-- Datenschutzerklärung zustimmen -->
+        <div id="modal-datenschutz" class="modal modal-fixed-footer">
+            <div class="modal-content">
+                <h4>Datenschutzerklärung zustimmen</h4>
+                <p>Um fortzufahren müssen Sie bitte der Datenschutzerklärung zustimmen.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
+            </div>
+        </div>
+
+        <a class="light-blue accent-4 btn-large right" onclick="checkAndNavigate()">
+            Zur Umfrage
+        </a>
+
+
+        <!-- Compiled and minified JavaScript -->
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var elems = document.querySelectorAll('.modal');
+                M.Modal.init(elems);
+            });
+            function checkAndNavigate() {
+                const checkbox = document.getElementById("agree");
+                if (checkbox.checked) {
+                    window.location.href = "https://forms.office.com/r/XKx2xLHWxJ";
+                } else {
+                    const modal = M.Modal.getInstance(document.getElementById('modal-datenschutz'));
+                    modal.open();
+                }
+            }
+        </script>
+    </div>
+</body>
+
+</html>
