@@ -1,0 +1,47 @@
+.more-margin-top_small {
+    margin-top: 3.5%;
+}
+
+.more-margin-top {
+    margin-top: 5%;
+}
+
+.more-margin-small {
+    margin-bottom: 3%;
+}
+
+.more-margin {
+    margin-bottom: 4%;
+}
+
+.more-margin-large {
+    margin-bottom: 5%;
+}
+
+
+.btn-large {
+    margin-bottom: 20px !important;
+}
+
+p {
+    font-size: large !important;
+}
+
+span a {
+    display: inline !important; /* Ensures it stays in the normal text flow */
+    line-height: inherit !important; /* Matches surrounding text */
+    vertical-align: baseline !important; /* Aligns with text properly */
+}
+
+p a {
+    display: inline !important; /* Ensures it stays in the normal text flow */
+    line-height: inherit !important; /* Matches surrounding text */
+    vertical-align: baseline !important; /* Aligns with text properly */
+}
+
+/* Center the toast */
+#toast-container {
+    top: 80% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+}
