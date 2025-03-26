@@ -9,3 +9,10 @@
 p {
     font-size: large !important;
 }
+
+/* Center the toast */
+#toast-container {
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+}
