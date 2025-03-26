@@ -140,8 +140,7 @@
                 if (checkbox.checked) {
                     window.location.href = "https://forms.office.com/r/XKx2xLHWxJ";
                 } else {
-                    const modal = M.Modal.getInstance(document.getElementById('modal-datenschutz'));
-                    modal.open();
+                    M.toast({html: 'I am a toast!', classes: 'rounded'});
                 }
             }
         </script>
