@@ -10,6 +10,12 @@ p {
     font-size: large !important;
 }
 
+span a {
+    display: inline !important; /* Ensures it stays in the normal text flow */
+    line-height: inherit !important; /* Matches surrounding text */
+    vertical-align: baseline !important; /* Aligns with text properly */
+}
+
 /* Center the toast */
 #toast-container {
     top: 50% !important;
